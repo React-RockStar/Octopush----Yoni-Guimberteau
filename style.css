@@ -1,0 +1,781 @@
+.signin_main{
+    background-image: url(siginin_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 70%;
+    margin: auto;
+}
+.form__group {
+    position: relative;
+    padding-top: 1.5em;
+    margin-top: 10px;
+    width: 50%;
+    margin: auto;
+}
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+    font-size: 1em;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1em;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #8b48f7, #6200ff);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0em;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgb(98, 0, 255);
+    font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+.content_right{
+    background-image: url(login_background.png);
+    text-align: center;
+    position: relative !important;
+    background-size: cover;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.content_left p a{
+    font-size: 1.1em;
+    color: black;
+    text-decoration-line: underline;
+    padding-right: 2em;
+}
+.content_left p:first-child{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.content_left p:last-child{
+    text-align: center;
+    
+}
+.content_left img{
+    width: 90%;
+    border: 5px solid #fe2a92;
+    border-radius: 40px;
+    margin-top: 1.5em;
+}
+.content_left{
+    padding: 0 4em;
+    position: relative !important;
+    padding-left: 5em !important;
+    padding-right: 1em !important;
+}
+.title{
+    color: white;
+    font-size: 2.6em;
+    font-weight: 400;
+}
+.form_second div p a{
+    font-size: 0.8em;
+    color: white;
+}
+.form_second div p{
+    padding-top: 1.6em;
+    text-align: left;
+}
+
+.btn-outline-primary {
+    color: white !important;
+    border-color: white !important;
+}
+.form_second div p button:hover{
+    background-color:  #6200ff;
+}
+.input_bottom{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.login_flag{
+    top: 1em;
+    right: 2em;
+    position: absolute;
+    width: 2em;
+}
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100vh;
+    padding: 0px !important;
+}
+.row{
+    height: 100%;
+    margin: 0 !important;
+}
+.content_left > div{
+    position: absolute;
+    top: 20%;
+}
+.content_right div:first-child{
+    position: absolute;
+    width: 100%;
+    top: 24%;
+}
+.w_30 {
+    width: 37% !important;
+}
+#phone{
+    width: 74%;
+    margin-left: 11%;
+}
+@media only screen and (max-width: 1300px){
+    #phone{
+        width: 73%;
+        margin-left: 11%;
+    }
+    .content_left > div{
+        position: absolute;
+        top: 25%;
+    }
+    .w_30{
+        width: 37% !important;
+    }
+    .signin_main{
+        width: 80%;
+    }
+    .form-group{
+        width: 37% !important;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .form__group{
+        width: 65%;
+    }
+    .select_country{
+        left: 25% !important;
+    }
+    .w_30{
+        width: 40% !important;
+    }
+    .form-group{
+        width: 40% !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #phone{
+        width: 76%;
+        margin-left: 10%;
+    }
+    .w_30{
+        width: 45% !important;
+    }
+    .form-group{
+        width: 45% !important;
+    }
+    .signin_main {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 1078px){
+    #phone {
+        width: 74%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 1050px){
+    #phone {
+        width: 75%;
+        margin-left: 11%;
+    }
+    .form__group{
+        width: 75%;
+    }
+    .select_country{
+        left: 24% !important;
+    }
+    .w_30{
+        width: 50% !important;
+    }
+    .form-group{
+        width: 50% !important;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .select_country{
+        left: 23% !important;
+    }
+    .signin_title{
+        font-size: 1.8em !important;
+    }
+}
+@media only screen and (max-width: 977px){
+    #phone {
+        width: 74%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 907px){
+    #phone {
+        width: 73%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .form__group{
+        width: 85%;
+    }
+    .select_country{
+        left: 22% !important;
+    }
+    .form-group{
+        font-size: .9em;
+    }
+    .form-group label:before{
+        padding: 7px !important;
+    }
+}
+@media only screen and (max-width: 852px){
+    #phone {
+        width: 72%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .form__group{
+        width: 85%;
+    }
+    .select_country{
+        left: 22% !important;
+    }
+    .signin_title{
+        font-size: 1.65em !important;
+    }
+    .form-group{
+        font-size: .9em;
+    }
+    .form-group label:before{
+        padding: 7px !important;
+    }
+}
+@media only screen and (max-width: 803px){
+    #phone {
+        width: 71%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .captcha{
+        text-align: center;
+    }
+    #phone {
+        width: 76%;
+        margin-left: 11%;
+    }
+    .w_30{
+        width: 70% !important;
+    }
+    .signin_main{
+        background-image: none;
+        background-size: unset;
+        background-repeat: unset;
+    }
+    .signin_page{
+        background-color: #3fb34f;
+    }
+    .signin_title{
+        font-size: 1.8em !important;
+    }
+    .form__group{
+        width: 85%;
+    }
+    .form-group{
+        font-size: 1em;
+    }
+    .form-group label:before{
+        padding: 7px !important;
+    }
+    .phone_second{
+        right: 10px !important;
+    }
+    .signin_background img{
+        display: none;
+    }
+    .signin_connect{
+        position: relative !important;   
+    }
+    .form-group input:checked + label:after{
+        width: 4px !important;
+    }
+}
+@media only screen and (max-width: 734px){
+    #phone {
+        width: 75%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .signin_title{
+        font-size: 1.4em !important;
+    }
+    .form__group{
+        width: 85%;
+    }
+    .signin_btn button {
+        font-size: 1em !important;
+    }
+    .signin_connect{
+        font-size: 1em !important;
+    }
+    .signin_background img{
+        display: none;
+    }
+    .phone_second{
+        right: 10px !important;
+    }
+    .form-group{
+        font-size: 1em;
+    }
+    .form-group label:before{
+        padding: 7px !important;
+    }
+    .signin_title{
+        font-size: 1.7em !important;
+    }
+}
+@media only screen and (max-width: 682px){
+    #phone {
+        width: 74%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 636px){
+    #phone {
+        width: 73%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 596px){
+    #phone {
+        width: 72%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 576px){
+    #phone {
+        width: 76%;
+        margin-left: 11%;
+    }
+    .form__group{
+        width: 90%;
+    }
+    .content_right{
+        background-color: #3fb34f;
+        background-image: unset;
+    }
+    .content_left{
+        position: unset !important;
+        padding: 0 1em !important;
+        margin: auto;
+        text-align: center;
+    }
+    .content_left > div{
+        position: unset;
+        top: unset;
+    }
+    .content_right div:first-child{
+        position: unset;
+        width: unset;
+        top: unset;
+    }
+    .captcha{
+        width: unset !important;
+        text-align: center !important;   
+    }
+    .w_30{
+        width: 90% !important;
+    }
+    .form-group{
+        width: 90% !important;
+    }
+    /* input#phone {
+        width: calc(150% - 26px);
+    }
+    .phone_text p{
+        width: calc(150% - 26px);
+        font-size: 1.1em;
+    } */
+    /* .form-group label{
+        text-align: center !important;
+    } */
+    .signin_title{
+        padding-top: 2em !important;
+        padding-bottom: 0 !important;
+    }
+}
+@media only screen and (max-width: 571px){
+    #phone {
+        width: 75%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 530px){
+    #phone {
+        width: 74%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 495px){
+    #phone {
+        width: 73%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 464px){
+    #phone {
+        width: 72%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .phone_first{
+        left: -90px !important;
+    }
+    .signin_title{
+        padding-top: 2em !important;
+        padding-bottom: 1em !important;
+    }
+    .signin_title {
+        font-size: 1.4em !important;
+    }
+    iframe {
+        margin-top: 0 !important;
+    }
+    .form-group{
+        margin-top: 1em !important;
+    }
+    .signin_title{
+        padding-top: 2em !important;
+        padding-bottom: 0 !important;
+    }
+    .signin_main {
+        width: 90%;
+    }
+    #phone {
+        width: 73%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 436px){
+    #phone {
+        width: 72%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 420px){
+    .signin_main {
+        width: 96%;
+    }
+    #phone {
+        width: 73%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 414px){
+    #phone {
+        width: 72%;
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    #phone {
+        width: 71%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 390px){
+    .captcha{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 370px){
+    .form-group{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .signin_btn{
+        margin-top: 0 !important;
+    }
+}
+@media only screen and (max-width: 364px){
+    #phone {
+        width: 70%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 346px){
+    #phone {
+        width: 69%;
+        margin-left: 11%;
+    }
+}
+@media only screen and (max-width: 328px){
+    #phone {
+        width: 68%;
+        margin-left: 11%;
+    }
+}
+.signin_title{
+    color: white;
+    font-size: 2.1em;
+    position: relative;
+    text-align: center;
+    padding-top: 2.6em;
+    padding-bottom: 2em;
+}
+.signin_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.bg_color{
+    background-color: white !important;
+    border-radius: unset !important;
+    padding: .3em !important;
+}
+.phone_text {
+    position: relative;
+    text-align: left;
+    margin: auto;
+    font-size: .8em;
+    color: white;
+}
+.captcha{
+    position: relative;
+    margin: auto;
+}
+.captcha img{
+    width: 32px;
+}
+.captcha_box{
+    background-color: rgb(249, 249, 249);
+    border: 1.5px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+}
+.recaptcha,.recaptcha a{
+    color: rgb(155, 155, 155);
+}
+.custom-checkbox .custom-control-label::before {
+    border-radius: unset !important;
+}
+.custom-checkbox{
+    color: white;
+    font-size: .9em;
+    padding-top: 1.5em;
+    text-align: center;
+}
+.signin_btn{
+    position: relative;
+    text-align: center;
+    margin-top: 2em;
+}
+.signin_btn button{
+    border: 2px solid;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+.signin_connect{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-bottom: 1em;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+.right_corner{
+    position: absolute !important;
+    top: 1em;
+    right: 2em;
+}
+.signin_background img{
+    height: 100%;
+    width: 70%;
+}
+.dropdown-menu{
+    min-width: 3.3rem !important;
+}
+.dropdown-menu:focus{
+    outline: none !important;
+}
+.recaptcha p{
+    margin: 0;
+}
+.recaptcha p:first{
+    font-size: .7em;
+}
+.recaptcha p:last-child{
+    font-size: .5em;
+}
+.select_country{
+    position: absolute !important;
+    left: 26.5%;
+    top: 51.5%;
+}
+.select_country > span{
+    color: white;
+}
+
+.input-phone, .input-group, .input-group-btn {
+    display: inline-block !important;
+    width: auto !important;
+}
+/* .phone_first {
+    position: absolute;
+    left: -110px;
+} */
+#phoneNumber {
+    display: none;
+}
+.caret{
+    display: none !important;
+}
+span.btn-cc {
+    position: absolute !important;
+    left: 100% !important;
+    color: white !important;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+    outline: none !important;
+}
+.phone_second{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+.phone_second ul{
+    display: none !important;
+}
+.custom-checkbox label{
+    text-align: left;
+}
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .new {
+    padding: 50px;
+  }
+  
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+    width: 35%;
+    margin: auto;
+    color: white;
+    margin-top: 2em;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  iframe{
+      margin-top: 4em;
+  }
+html, body, .signin_page{
+    height: auto;
+}
+.phone_second .btn-cc{
+    display: none;
+}
+#error_message{
+    color: #cc434a;
+    font-size: 1em;
+    text-align: left;
+    display: none;
+}
+.language_selector{
+    right: 10px;
+    width: fit-content;
+    position: absolute !important;
+    top: 5px;
+}
+.dropdown-item{
+    text-align: center !important;
+}
+.dropdown-menu-right{
+    width: 60px;
+}
+.signin_connect a{
+    color: white;
+}

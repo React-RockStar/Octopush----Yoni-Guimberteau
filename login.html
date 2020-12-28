@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Octopush</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container login_page" id="page1">
+        <div class="row">
+            <div class="col-sm-6 content_left">
+                <div>
+                    <p>Looking for a different login page?</p>
+                    <p>
+                        <a href="https://www.octopush-dm.com/connectez-vous">
+                            If you account looks like this, click here to login.  
+                        </a>
+                    </p>
+                    <div>
+                        <img src="screenshot.png" alt="">
+                    </div>
+                    <p>
+                        <a href="" data-toggle="tooltip" data-placement="right" title="You may have registered with the legacy version that was active from 2011 to 2020 and that will remain active forr a while. If so, please go back to old version to log in. If you registered directly on this brand new version, please enter yor credentials on that page." class="custom_tooltip">
+                            Why am I seeing this?
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 content_right">
+                <div>
+                    <p class="title">Octopush</p>
+                    <div class="form__group field">
+                        <input type="email" class="form__field" placeholder="adresse email" name="name" id='email' data-error-msg="The email is required in valid format!" pattern = "/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" onkeydown="validate()" required />
+                        <label for="email" class="form__label">adresse email</label>
+                        <p id="error_message">The email field must be a valid email.</p>
+                    </div>
+                    <div class="form__group field form_second" style="margin-top: 1em;padding-top: 1em;">
+                        <input type="password" class="form__field" placeholder="mot de passe" name="name" id='name' required />
+                        <label for="password" class="form__label">mot de passe</label>
+                        <div class="input_bottom">
+                            <p>
+                                <a href="signin.html">Register -</a>
+                                <a href="">forgotten password</a>
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-outline-primary">CONNEXION</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="flag.png" alt="" class="login_flag">
+            </div>
+        </div>
+    </div>
+        <script>
+          $(document).ready(function() {
+            $('.input-phone').intlInputPhone();
+        })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validate() {
+            var email = $("#email").val();
+            if (validateEmail(email)) {
+                document.getElementById("error_message").style.display = "none";
+            } else {
+                document.getElementById("error_message").style.display = "block";
+            }
+            return false;
+        }
+    </script>
+</body>
